@@ -1,0 +1,273 @@
+.home-screen {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+  margin-bottom: 2rem;
+  
+  @media (min-width: 768px) {
+    flex-direction: row; 
+  }
+}
+
+.login-register-section,
+.stock-of-the-month-section {
+  flex: 1;
+  background-color: rgba(244, 244, 244, 0.3);
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-register-buttons {
+  margin-top: 20px;
+}
+
+.login-register-buttons button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 50%;
+}
+
+.stock-info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.stock-info p strong {
+  font-size: 20px;
+}
+
+.home-quote-title {
+  position: relative;
+  top: 75%;
+  background-color: rgba(244, 244, 244, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgb(28, 40, 50);
+}
+
+.home-quote {
+  flex: 1;
+  background-color: rgba(244, 244, 244, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgb(28, 40, 50);
+}
+
+.financial-freedom-quotes {
+  padding: 1.5rem 2rem;
+  background-color: var(--quotes-bg, rgba(244, 244, 244, 0.3));
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.financial-freedom-quotes h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .home-screen {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .login-register-buttons {
+    flex-direction: column; /* Stack buttons on mobile */
+  }
+
+  .about-quote-title,
+  .about-quote {
+    font-size: 1rem; /* Smaller text on mobile */
+    padding: 1rem; /* Reduce padding for mobile */
+  }
+
+  /* Adjust the font size of the quotes */
+  .about-quote-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .about-quote {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-quote-title {
+    font-size: 1rem; /* Even smaller font on very small screens */
+  }
+}
+
+/* General Styles for the Section */
+.five-steps-section {
+  background-color: rgba(244, 244, 244, 0.3); /* Light background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.five-steps-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1c2832; /* Dark text color for heading */
+}
+
+/* Steps List */
+.steps-list {
+  list-style: decimal;
+  padding-left: 2rem;
+}
+
+.steps-list li {
+  margin-bottom: 1.5rem;
+}
+
+.steps-list li strong {
+  font-size: 1.2rem;
+  color: #1c2832;
+}
+
+.steps-list li p {
+  font-size: 1rem;
+  color: #1c2832;
+}
+
+/* Mobile-friendly Styles */
+@media (max-width: 768px) {
+  .five-steps-section {
+    padding: 1.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .five-steps-section h2 {
+    font-size: 1.8rem; /* Smaller heading size for mobile */
+  }
+
+  .steps-list {
+    padding-left: 1.5rem; /* Reduce padding on mobile for better fit */
+  }
+
+  .steps-list li {
+    margin-bottom: 1.2rem; /* Less space between steps */
+  }
+
+  .steps-list li strong {
+    font-size: 1rem; /* Smaller text for steps */
+  }
+
+  .steps-list li p {
+    font-size: 0.95rem; /* Slightly smaller paragraph text */
+  }
+}
+
+/* Very Small Screens (like smartphones in portrait mode) */
+@media (max-width: 480px) {
+  .five-steps-section {
+    padding: 1rem; /* Even smaller padding */
+  }
+
+  .five-steps-section h2 {
+    font-size: 1.6rem; /* Smaller heading size */
+  }
+
+  .steps-list {
+    padding-left: 1rem; /* Further reduce padding */
+  }
+
+  .steps-list li {
+    margin-bottom: 1rem; /* Less space between steps */
+  }
+
+  .steps-list li strong {
+    font-size: 0.9rem; /* Further reduce font size */
+  }
+
+  .steps-list li p {
+    font-size: 0.85rem; /* Further reduce font size */
+  }
+}
+
+/* WealthSimple TFSA section */
+.wealth-simple-section {
+  background-color: rgba(244, 244, 244, 0.3); /* Same background as the rest */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  max-width: 100%; /* Ensures it does not go beyond container */
+  width: 100%;
+}
+
+.wealth-simple-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.wealth-simple-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(28, 40, 50);
+  margin-bottom: 1rem;
+}
+
+/* Button styles to match login button */
+.referral-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #212529; /* Same as button in dark mode */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for referral link button */
+.referral-link:hover {
+  background-color: #495057; /* Darker shade when hovered */
+  text-decoration: underline;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .wealth-simple-section {
+    padding: 1.5rem; /* Reduces padding on smaller screens */
+  }
+
+  .wealth-simple-section h3 {
+    font-size: 1.2rem; /* Adjusts font size for mobile */
+  }
+
+  .wealth-simple-section p {
+    font-size: 1rem; /* Smaller text on mobile */
+  }
+
+  .referral-link {
+    font-size: 1rem; /* Adjusts button text size for mobile */
+    padding: 8px 16px; /* Makes button smaller */
+  }
+}

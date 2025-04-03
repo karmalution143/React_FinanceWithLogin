@@ -1,0 +1,17 @@
+.footer-container {
+  display: flex;
+  background-color: #2d3748;
+  height: 90px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  font-style: italic;
+}

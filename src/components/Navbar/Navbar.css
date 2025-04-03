@@ -1,0 +1,78 @@
+/* Header.css */
+.navbar {
+  background-color: #2d3748 !important;
+  height: 90px;
+  padding-left: 20px;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Default styling for dropdown menu (hidden by default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #343a40;
+  border: none;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  opacity:0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+/* Display the dropdown menu when hovering over the parent */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  transform: translateY(0);
+}
+
+/* Style the dropdown items */
+.dropdown-item {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #495057;
+  color: white;
+}
+
+/* Ensure the dropdown menu aligns properly below the Login link */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}

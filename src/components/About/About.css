@@ -1,0 +1,117 @@
+/* General Styling */
+.about-container {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #333333;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Content and Themes Section */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  /* For desktop view */
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.about-mission,
+.key-themes {
+  flex: 1;
+  background-color: rgba(244, 244, 244, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-mission {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgb(28, 40, 50);
+}
+
+.key-themes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.key-themes li {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(28, 40, 50);
+  display: flex;
+  align-items: flex-start;
+}
+
+.key-themes strong {
+  font-weight: bold;
+  color: #222222;
+  min-width: 120px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.key-themes li p {
+  margin: 0;
+  flex: 1;
+}
+
+.dark-mode .about-header h1 {
+  color: #f5f5f5;
+}
+
+.dark-mode .about-content p,
+.dark-mode .key-themes li {
+  color: #ffffff;
+}
+
+.dark-mode .key-themes li strong {
+  color: #ffffff;
+}
+
+.dark-mode .key-themes {
+  border-top: 1px solid #444444;
+}
+
+.about-container,
+.about-header h1,
+.about-content p,
+.key-themes li {
+  transition: all 0.3s ease;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-mission,
+  .key-themes {
+    padding: 1.5rem;
+  }
+
+  .about-content {
+    padding: 1.5rem;
+  }
+}
